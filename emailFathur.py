@@ -10,8 +10,8 @@ import time
 
 smtp_server = "smtp.gmail.com"
 smtp_port = 465
-email = ""
-password = ""
+email = "workergithub@gmail.com"
+password = "browncoffee"
 
 kelas = [f"XII MIPA {i} Belajar ID" for i in range(1,9)] + [f"XII IPS {i} Belajar ID" for i in range(1, 5)]
 server = smtplib.SMTP_SSL(smtp_server, smtp_port)
@@ -28,16 +28,7 @@ for kls in kelas:
             #     row.belajarid_email = 'adeayu826@gmail.com'
                 message_to_send = f"""\
                     
-                dingdong —🔔🔔
-                Hello {row.Nama_Siswa_Siswa}, you are invited to the SMANSA's graduation ceremony, class of 2024. 👏🏻👏🏻👏🏻 
-
-                📅 May 11, 2024
-                📍ASTON Cirebon Hotel & Convention Center
-
-                Please scan this qr code to enter the room, thank you.
-
-                best regards, 
-                OSIS/MPK SMA Negeri 1 Cirebon.
+                @panzelv
                     
                 <a href='{file.get(str(index + 1)+'.png')}'>E-Ticket SMANSA Univday 2024 {row.Nama_Siswa}</a>
                 """

@@ -35,3 +35,14 @@ EmailFathur.py
 --qr_code
 ---ips1-4
 ---mipa1-8
+
+dingdong —🔔🔔
+                Hello {row.Nama_Siswa_Siswa}, you are invited to the SMANSA's graduation ceremony, class of 2024. 👏🏻👏🏻👏🏻 
+
+                📅 May 11, 2024
+                📍ASTON Cirebon Hotel & Convention Center
+
+                Please scan this qr code to enter the room, thank you.
+
+                best regards, 
+                OSIS/MPK SMA Negeri 1 Cirebon.

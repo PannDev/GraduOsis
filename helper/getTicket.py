@@ -2,7 +2,7 @@
 from helper.Google import Create_Service #custom lib
 from googleapiclient.http import MediaFileUpload
 #Import googleapiclient.http could not be resolved
-CLIENT_SECRET_FILE = 'credentials.json'
+CLIENT_SECRET_FILE = '/credentials.json'
 API_NAME = 'drive'
 API_VERSION = 'v3'
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -29,7 +29,7 @@ def getTicket(folder_name):
             ") and trashed = false and '" + folder_id + "' in parents"
         response = service.files().list(q=query, fields='files(id,name)').execute()
         files = response.get('files')
-        # print(len(files))
+        print(len(files))
         values = {}
         for f in ListIDS:
             for file in files: 
