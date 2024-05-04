@@ -11,7 +11,7 @@ smtp_port = 465
 email = ""
 password = ""
 
-kelas = [f"XII MIPA {i}" for i in range(1,9)] + [f"XII IPS {i}" for i in range(1, 5)]
+kelas = [f"XII MIPA {i} Belajar ID" for i in range(1,9)] + [f"XII IPS {i} Belajar ID" for i in range(1, 5)]
 server = smtplib.SMTP_SSL(smtp_server, smtp_port)
 server.login(email, password)
 message = EmailMessage()
