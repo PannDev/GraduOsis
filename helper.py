@@ -15,7 +15,7 @@ def getDB(filename: str, kls: str) -> pd.DataFrame:
     return df
 
 # getTicket
-from helper.Google import Create_Service
+from helper.Google import Create_Service #custom lib
 from googleapiclient.http import MediaFileUpload
 CLIENT_SECRET_FILE = 'credentials.json'
 API_NAME = 'drive'

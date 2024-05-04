@@ -2,8 +2,8 @@ import smtplib
 import pandas as pd
 from email.message import EmailMessage
 from email.mime.text import MIMEText
-from helper.getTicket import getTicket
-from helper.getDB import getDB
+from helper.getTicket import getTicket #custom lib
+from helper.getDB import getDB #custom lib
 import time
 
 smtp_server = "smtp.gmail.com"
