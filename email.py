@@ -15,8 +15,8 @@ kelas = [f"XII MIPA {i} Belajar ID" for i in range(1,9)] + [f"XII IPS {i} Belaja
 server = smtplib.SMTP_SSL(smtp_server, smtp_port)
 server.login(email, password)
 message = EmailMessage()
-message["Subject"] = "E-Ticket Bumandhala SMANSA Univday 2024"
-message["From"] = "SMANSA Univday 2024"
+message["Subject"] = "SMANSA Graduation 2023/2024"
+message["From"] = "OSIS/MPK x IC81"
 for kls in kelas:
     df = getDB(f'assets/csvfile/{kls}.csv', kls)
     try:
