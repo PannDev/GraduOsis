@@ -18,3 +18,20 @@
                 #SmansaUnivday2024<br>
                 #BumandhalaSmansaUnivday2024<br>
                 @smansa.univday<br>
+
+
+
+GraduOsis
+EmailFathur.py
+-helper
+--__init__.py
+--getDB.py
+--getTicket.py
+--Google.py
+-assets
+--csvfile
+---XII IPS 1-4 Belajar ID
+---XII MIPA 1-8 Belajar ID
+--qr_code
+---ips1-4
+---mipa1-8

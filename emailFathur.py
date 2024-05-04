@@ -6,6 +6,8 @@ from helper.getTicket import getTicket #custom lib
 from helper.getDB import getDB #custom lib
 import time
 
+# import helper.getTicket could not be resolved
+
 smtp_server = "smtp.gmail.com"
 smtp_port = 465
 email = ""
