@@ -22,36 +22,30 @@ for kls in kelas:
     try:
         file = getTicket(kls)
         for index, row in df.iterrows():
-            # if row.Nama == 'Ade Ayu Elvalina Cristin Manalu':
-            #     row.email = 'adeayu826@gmail.com'
+            # if row.Nama_Siswa == 'Ade Ayu Elvalina Cristin Manalu':
+            #     row.belajarid_email = 'adeayu826@gmail.com'
                 message_to_send = f"""\
-                Hi, Sobat Bumandhala 🫅🏻<span style="color:red;"><b>&#8252;</b></span><br>
-                {row.Nama}, you are invited to <b>𝑻𝒓𝒚 𝑶𝒖𝒕</b> TOBK SNBT and <b>𝑴𝒂𝒊𝒏 𝑬𝒗𝒆𝒏𝒕</b> 'Bumandhala' Smansa Univday 2024.<br><br>
+                    
+                dingdong —🔔🔔
+                Hello {row.Nama_Siswa_Siswa}, you are invited to the SMANSA's graduation ceremony, class of 2024. 👏🏻👏🏻👏🏻 
 
-                E-Ticket ini bisa sobat gunakan saat pengerjaan Try Out yang akan dilaksanakan pada hari <b>𝐒𝐚𝐛𝐭𝐮</b>, 20 <b>𝐉𝐚𝐧𝐮𝐚𝐫𝐢</b> 2024. Selain itu, e-ticket juga akan digunakan saat Main Event yang akan diselenggarakan pada hari <b>𝐒𝐚𝐛𝐭𝐮</b>, 27 𝐉𝐚𝐧𝐮𝐚𝐫𝐢 2024. <br>
+                📅 May 11, 2024
+                📍ASTON Cirebon Hotel & Convention Center
 
-                Nantinya, Sobat Bumandhala wajib menunjukkan e-ticket kepada Panitia Smansa Univday 2024 sebagai bukti kehadiran saat Try Out dan Main Event. <br>
-                Tentunya tidak lupa, setelah penukaran e-ticket ini, Sobat Bumandhala akan mendapatkan konsumsi dari Panitia Smansa Univday 2024.<br><br>
+                Please scan this qr code to enter the room, thank you.
 
-                So, keep it safely and enjoy the event :) !<br>
-                See you, Sobat Bumandhala! 👋🏻<br><br>
-
-                ———————————<br>
-                Narahubung <br>
-                👤: 082218709191 (Nilam Selapandan) <br>
-                👤: 0895392152737 (Muhammad Fathur Rizky) <br>
-                👤: 088218098425 (Putri Fanisha) <br><br>
-
-                #SmansaUnivday2024<br>
-                #BumandhalaSmansaUnivday2024<br>
-                @smansa.univday<br>
-                <a href='{file.get(str(index + 1)+'.png')}'>E-Ticket SMANSA Univday 2024 {row.Nama}</a>
+                best regards, 
+                OSIS/MPK SMA Negeri 1 Cirebon.
+                    
+                <a href='{file.get(str(index + 1)+'.png')}'>E-Ticket SMANSA Univday 2024 {row.Nama_Siswa}</a>
                 """
-                message["To"] = row.email
-                print(f"{row.Nama}[{index+1}] -> {row.email} ", end="")
+                
+                
+                message["To"] = row.belajarid_email
+                print(f"{row.Nama_Siswa}[{index+1}] -> {row.belajarid_email} ", end="")
                 msg = MIMEText(message_to_send, 'html')
                 message.set_content(msg)
-                # print(f"{row.Nama}[{index+1}] -> {file.get(str(index + 1)+'.png')}")
+                # print(f"{row.Nama_Siswa}[{index+1}] -> {file.get(str(index + 1)+'.png')}")
                 try:
                     server.send_message(message)
                     print('[Sent]')
